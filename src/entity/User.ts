@@ -5,6 +5,7 @@ import {
   BaseEntity,
   OneToMany
 } from "typeorm";
+
 import { Note } from "./Note";
 import { SharedNote } from "./SharedNote";
 
