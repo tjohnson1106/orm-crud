@@ -1,7 +1,15 @@
-import { PrimaryColumn, JoinColumn, BaseEntity, ManyToOne } from "typeorm";
+import {
+  Entity,
+  BaseEntity,
+  ManyToOne,
+  JoinColumn,
+  PrimaryColumn
+} from "typeorm";
+
 import { User } from "./User";
 import { Note } from "./Note";
 
+@Entity()
 export class SharedNote extends BaseEntity {
   @PrimaryColumn()
   targetId: number;
